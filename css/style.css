@@ -1,0 +1,107 @@
+
+h2, h3, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+/***descargas***/
+
+#descargas {
+    background-color: #fdcb4f;
+    color: white;
+    text-align: center;
+    padding-top: 168px;
+    padding-bottom: 144px;
+}
+
+#descargas img {
+    width: 135px;
+}
+
+#descargas h2{
+    font-size: 60px;
+    width: 587px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+#descargas p {
+    margin-top: 0;
+}
+
+
+/****seccion detalles****/
+
+#detalles p{
+    text-align: center;
+    color: #777777;
+}
+
+#detalles h2 {
+    font-size: 40px;
+    margin-top: 111px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#detalles div{
+    margin-bottom: 130px;
+}
+
+.appimg {
+    display: inline-flex;
+    margin-bottom: 100px;
+}
+
+.caracteristicas{
+    width: 60%;
+    display: inline-flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    vertical-align: top;
+}
+
+.caracteristicas li {
+    width: 289px;
+    list-style: none;
+    margin-left: 60px;
+}
+
+.caracteristicas img{
+    width: 42px;
+}
+
+.caracteristicas p {
+    font-size: 14px;
+}
+
+/******seccion start******/
+
+#start {
+    background-image: url(../img/usuario.jpg);
+    background-position: center center;
+    color: white;
+}
+
+#start article {
+    margin-left: 71px;
+    padding-bottom: 242px;
+}
+
+#start h2 {
+    padding-top: 450px;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+#start p {
+    font-size: 9px;
+    border: 1px solid white;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 17px;
+}
