@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+
 <html>
    <head>
   	  <meta charset="utf-8">
-  	  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+  	  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  	  
+  	  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+  	  
 
       <title>TP Git</title>
    </head>
@@ -11,24 +15,90 @@
    <body>
      <!--seccion con un nav,un articulo con imagen y un boton -->
    	  <header>
-   	  	<nav>
-           <h1><a href="#">Start Bootstrap</a></h1>
-             <ul>
-  	  	       <li><a href="#">Download</a></li>
-  	  	       <li><a href="#">Features</a></li>
-  	  	       <li><a href="#">Contact</a></li>
-  	  	     </ul>
-         </nav>
-         <article>
-         	<h2>New Age is an app landing page that will help you beautifully showcase your new mobile app,or anything else!</h2>
-         	<a href="#"><p>Start now for free!</p></a>
-         </article>
-         <div class="contenedor">
-         <img src="img/telefono.png"  class="tel";/>
-         </div>
+   	  	<section id="nav">
+   	  	    <nav>
+   	  	               <h1><a href="#">Start Bootstrap</a></h1>
+   	  	                 <ul>
+   	  	                       <li><a href="#">Download</a></li>
+   	  	                       <li><a href="#">Features</a></li>
+   	  	                       <li><a href="#">Contact</a></li>
+   	  	                     </ul>
+   	  	             </nav>
+   	  	             <article>
+   	  	                 <h2>New Age is an app landing page that will help you beautifully showcase your new mobile app,or anything else!</h2>
+   	  	                 <a href="#"><p>Start now for free!</p></a>
+   	  	             </article>
+   	  	             <div class="contenedor">
+   	  	             <img src="img/telefono.png"  class="tel";/>
+   	  	             </div>
+   	  	</section>
    	  </header>
 
-      <!--Seccion con redes sociales -->
+    <!--seccion con links a google play y app store-->
+      
+    <section id="descargas">
+        <article>
+            <h2>Discover what all the buzz us about!</h2>
+            <p>Our app is available on any mobile device! Download now to get started!!</p>
+            <div>
+                <a href="#"><img src="img/google-play-badge.svg" alt="google play link"></a>
+                <a href="#"><img src="img/app-store-badge.svg" alt="app store link"></a>
+            </div>
+        </article>
+    </section>
+    
+    <!--seccion detalles de la aplicacion-->
+    
+    <section id="detalles">
+        <article>
+            <div>
+                <h2>Unlimited Features, Unlimited Fun</h2>
+                <p>Check out what you can do with ths app theme!</p>
+            </div>
+            <img src="img/telefono.png" alt="imagen app en iphone" class="appimg">
+            <ul class="caracteristicas">
+                <li>
+                    <img src="img/telefono-movil.svg" alt="mobile">
+                    <div>
+                        <h3>Device Mockups</h3>
+                        <p>Ready to use HTML/CSS devices mockups, no Photoshop required!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/camara-de-fotos.svg" alt="camera">
+                    <div>
+                        <h3>Flexible Use</h3>
+                        <p>Put an image, video, animation or anything else in the screen!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/regalo.svg" alt="regalo">
+                    <div>
+                        <h3>Free to Use</h3>
+                        <p>As always, this theme is free to download and use for any purpose!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/candado-abierto.svg" alt="open">
+                    <div>
+                        <h3>Open Source</h3>
+                        <p>Since this theme is MIT licensed, you can use it comercially!</p>
+                    </div>
+                </li>
+            </ul>
+        </article>    
+    </section>
+    
+    <!--seccion para comenzar a usar la aplicacion-->
+    
+    <section id="start">
+       <article>
+           <h2>Stop waiting.<br>Start building.</h2>
+           <p>LET'S GET STARTED!</p>
+       </article>
+    </section>
+    
+     <!--Seccion con redes sociales -->
 
    	  <section>
          <h2>We <img src="img/like.png";/> new friends!</h2>
@@ -39,11 +109,13 @@
    	  	   </div>
    	  </section>
    	  
-      <!-- El pie de pagina,footer -->
+    <!-- El pie de pagina,footer -->
 
    	  <footer>
    	  	<h5>© 2016 Start Bootstrap.All Rights Reserved.</h5>
    	  	<p>Privacy</p><p>Terms</p><p>FAQ</p>
    	  </footer>
-   </body>
+    
+</body>
+
 </html>
