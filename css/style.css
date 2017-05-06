@@ -1,5 +1,5 @@
 
-h2, h3, p {
+h1, h2, h3, p, a {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
 }
@@ -289,153 +289,80 @@ h1 a:hover {
 /****************************************************mobile***************************************************/
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 360px){
     
   /** cabecera de la pagina **/
     
-     nav {
-	   margin:0 auto;
-	   padding:0px 0px 20px 0px;
-	   max-width: 1200px;
+    nav {
        background: white; 
-       height: 50px;
+       height: 30px;
     }
     
-    #nav a {
+    #nav h1 a {
         color:orange;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     header {
-	   margin:0;
-	   padding:0;
 	   width:100%;
-	   height:727px;
-	   background:url("../img/fondo.png")repeat, linear-gradient(to right,#d92533,#7b4397);
+	   height:1130px;
     }
 
    
-    h1 {
-	   font-size:14px;
-	   float:left;
+    #nav h1 {
 	   font-weight:lighter;
-	   margin:11px 0 11px 60px;
+	   margin-left: 10px;
     }
- 
-    h1 a {
-	   text-decoration: none;
-	   color:#FFF;
-    }
-
-    h1 a:hover {
-	   color:#E8E8E8;
-    }
-
+    
     #nav ul {
-	   list-style-type:none;
-	   margin:11px 20px;
-	   float:right;
-	   padding:0;
-    }
-
-    #nav li {
-	   display:inline-block;
-	   padding:0 25px;
-    }
-
-    #nav a {
-        
-        text-decoration:none;
-        text-transform:uppercase;
-        font-size:10px;
-        font-weight:lighter;
-        display:block;
-        letter-spacing: 0.1em;
-    }
-
-    #nav a:hover {
-	   color:#E8E8E8;
+        visibility: hidden;
     }
 
     #nav article {
-	   height:726px;
-	   width:100%;
-	   margin:0;
-	   padding:0;
-	   color:#FFF;
-}
+        height:726px;
+        width:100%;
+        margin:0;
+        padding:0;
+        color:#FFF;
+    }
 
     #nav h2 {
-        width: 550px;
-        height: auto;
-        margin:0;
-        padding:182px 0 0 75px;
-        font-size:40px;
-        font-weight:lighter;
-        letter-spacing: 0.004em;
-}
-
-
+        width: 296px;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 95px;
+        padding-left: 27px;
+        padding-right: 24px;
+        margin-bottom: 30px;
+    }
 
     #nav p {
-        font-size:12px;
-        margin:62px 0 0 116px;
-        padding:15px 48px;
-        width: 150px;
-        height:auto;
-        letter-spacing: 0.1em;
-        font-weight:lighter;
-        text-transform:uppercase;
-        border:1px solid;
-        border-radius: 30px;
+        font-size: 10px;
+        margin: 0;
+        padding-left: 57px;
+        padding-right: 36px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: 58px;
     }
 
     .contenedor {
-        width: 448px;
-        height: 610px;
-        float:right;
-        padding: 0px;
-        margin:0 71px 0 0;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        left: 753px;
-        top: 130px;
-
+        float: none;
+        position: inherit;
+        margin-top: -300px;
+        margin-left: 34px;
     }
 
     .tel {
-         clip-path: inset(0 0 294px 0);
-         width:448px;
-         height:auto;
-      }
+         width:285px;
+    }
 
-
-
+    
     /***descargas***/
 
-    #descargas {
-        background-color: #fdcb4f;
-        color: white;
-        text-align: center;
-        padding-top: 168px;
-        padding-bottom: 180px;
-    }
-
     #descargas img {
-        width: 135px;
-    }
-
-    #descargas h2{
-        font-size: 60px;
-        width: 587px;
-        display: inline-block;
-        text-align: center;
-        margin: 0;
-    }
-
-    #descargas p {
-        margin-top: 0;
+        width: 197px;
+        margin: 7px;
     }
 
 
@@ -444,8 +371,14 @@ h1 a:hover {
     #detalles p{
         text-align: center;
         color: #777777;
+        width: 298px;
+        margin-left: 35px;
     }
 
+    #detalles .caracteristicas p{
+        width: 260px;
+    }
+    
     #detalles h2 {
         font-size: 40px;
         margin-top: 111px;
@@ -453,68 +386,66 @@ h1 a:hover {
         text-align: center;
     }
 
-    #detalles div{
-        margin-bottom: 130px;
-    }
-
     .appimg {
-        display: inline-flex;
-        margin-bottom: 100px;
-        width: 40%,
+        margin-left: 30px;
     }
-
-    .caracteristicas{
+    
+    .caracteristicas {
         width: 60%;
         display: inline-flex;
         text-align: center;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: center;
         vertical-align: top;
     }
 
-    .caracteristicas li {
-        width: 289px;
-        list-style: none;
-        margin-left: 60px;
-    }
-
     .caracteristicas img{
-        width: 42px;
-    }
-
-    .caracteristicas p {
-        font-size: 14px;
+        width: 60px;
     }
 
     /******seccion start******/
 
-    #start {
-        background-image: url(../img/usuario.jpg);
-        background-position: center center;
-        color: white;
-    }
 
     #start article {
-        margin-left: 71px;
-        padding-bottom: 242px;
+        margin-left: 10px;
     }
 
     #start h2 {
-        padding-top: 300px;
-        font-size: 60px;
-        font-weight: lighter;
+        font-size: 30px;
     }
 
-    #start p {
-        font-size: 9px;
-        border: 1px solid white;
-        width: 150px;
+
+    /** seccion con redes sociales **/
+
+    #redes {
+        background-color:#fdc844;
+        height:360px;
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+
+    #redes h2 {
+        padding:0;
+        width: 225px;
+        margin-left: 65px;
         text-align: center;
-        padding: 10px;
-        border-radius: 17px;
     }
 
+    .redes {
+        padding:0px 0 96px 525px;
+    }
+
+    .redes img {
+        width:48px;
+        margin:0 0 0 14px;
+        }
+
+    .redes img:hover {
+        opacity:0.5;
+    }  
+    
     /** seccion pie de pagina,footer **/
 
     #footer {
@@ -540,37 +471,7 @@ h1 a:hover {
     }
 
 
-    /** seccion con redes sociales **/
-
-    #redes {
-        background-color:#fdc844;
-        height:360px;
-        width: 100%;
-        margin:0;
-        padding:0;
-    }
-
-
-    #redes h2 {
-        margin:0;
-        padding:108px 0 32px 480px;
-        font-size: 37px;
-        color:#FFF;
-        font-weight:lighter;
-    }
-
-    .redes {
-        padding:0px 0 96px 525px;
-    }
-
-    .redes img {
-        width:48px;
-        margin:0 0 0 14px;
-        }
-
-    .redes img:hover {
-        opacity:0.5;
-    }  
+    
     
     
     
